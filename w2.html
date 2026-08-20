@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Web Design</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -13,7 +14,7 @@
             alt="Weather Logo"
             width="100"
         />
-        <h1>Project Web Design</h1>
+        <h1 id="main-header">Project Web Design</h1>
     </header>
     <nav>
         <ul>
@@ -25,7 +26,7 @@
     <main>
         <section id="overview">
             <h2>Overview</h2>
-            <p>
+            <p class="highlight">
                 This project aims to collect weather and air quality data from public APIs and display it on maps and charts. The data pipeline will periodically fetch data, detect anomalies, and present the information in a user-friendly format.
             </p>
         </section>
@@ -67,15 +68,11 @@
                         <td>Use of pesticides and fertilizers, improper disposal of waste, and industrial activities.</td>
                         <td>Encourage organic farming practices, implement proper waste management systems, and regulate industrial activities to prevent soil contamination.</td>
                     </tr>
-        
+                </tbody>
+            </table>
         </section>
-    </main>
-    
-  </body>
 
-
-    <footer>
-        <h2>Contact Information</h2>
+<h2>Contact Information</h2>
         <form id="contact" action="">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
@@ -98,8 +95,28 @@
             <textarea id="message" name="message" placeholder="Type your message..."></textarea>
             <br />
             <button type="submit">Submit</button>
+        </form>
 
-        <p>&copy; 2024 Project Web Design. All rights reserved.</p>
+        <div class="container">
+            <div class="card" id ="top-product">Product 1   </div>
+            <div class="card" >Product 2   </div>
+            <div class="card" >Product 3   </div>
+        </div>
+        <div class="dashboard">
+            <div class="card" >Product 4   </div>
+            <div class="card" >Product 5   </div>
+            <div class="card" >Product 6   </div>
+            <div class="card" >Product 7   </div>
+        </div>
+    </main>
+    
+  </body>
+
+
+    <footer>
+        
+
+    <p>&copy; 2024 Project Web Design. All rights reserved.</p>
     <a href="https://www.nchmf.gov.vn/kttv/" target="_blank">Reference</a>
     <img src ="https://www.shutterstock.com/image-photo/weather-forecast-map-cold-wave-600w-2725629029.jpg"
         alt="Weather Forecast Map" />

@@ -1,0 +1,67 @@
+h1 {
+    color: blue;
+    font-size: 2em;
+}
+
+#main-header {
+    color: darkorange;
+    font-size: 2.5em;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.card {
+    padding: 15px;
+    border: 2px solid gray;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.dashboard .card {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color :aqua;
+}
+.container .card:hover {
+    background-color: lightgray;
+}
+
+#top-product {
+    color :crimson;
+}
+
+.dashboard {
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard .card {
+    flex: 1 1 200px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eef6ff;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard .card {
+        padding: 8px;
+    }
+}
