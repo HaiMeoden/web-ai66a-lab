@@ -40,22 +40,76 @@
             <p>
                 This section will showcase the air quality data collected and displayed.
             </p>
+            
+            <table>
+                <caption> Environmental pollution table</caption>
+                <thead>
+                    <tr>
+                        <th>Pollution</th>
+                        <th> Main Reason</th>
+                        <th> Solutions</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Air Pollution</td>
+                        <td>Industrial emissions, vehicle exhaust, and burning of fossil fuels.</td>
+                        <td>Implement stricter emission regulations, promote public transportation, and encourage the use of renewable energy sources.</td>
+                    </tr>
+                    <tr>
+                        <td>Water Pollution</td>
+                        <td>Discharge of untreated sewage, industrial waste, and agricultural runoff.</td>
+                        <td>Improve wastewater treatment facilities, enforce regulations on industrial discharges, and promote sustainable agricultural practices.</td>
+                    </tr>
+                    <tr>
+                        <td>Soil Pollution</td>
+                        <td>Use of pesticides and fertilizers, improper disposal of waste, and industrial activities.</td>
+                        <td>Encourage organic farming practices, implement proper waste management systems, and regulate industrial activities to prevent soil contamination.</td>
+                    </tr>
+        
         </section>
     </main>
     
   </body>
-<footer>
-    <p>&copy; 2024 Project Web Design. All rights reserved.</p>
-  <a href="https://www.nchmf.gov.vn/kttv/" target="_blank">Reference</a>
-  <img src ="https://www.shutterstock.com/image-photo/weather-forecast-map-cold-wave-600w-2725629029.jpg"
-    alt="Weather Forecast Map" />
+
+
+    <footer>
+        <h2>Contact Information</h2>
+        <form id="contact" action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>    
+            </select>
+            <br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+            <br />
+            <button type="submit">Submit</button>
+
+        <p>&copy; 2024 Project Web Design. All rights reserved.</p>
+    <a href="https://www.nchmf.gov.vn/kttv/" target="_blank">Reference</a>
+    <img src ="https://www.shutterstock.com/image-photo/weather-forecast-map-cold-wave-600w-2725629029.jpg"
+        alt="Weather Forecast Map" />
     <figcaption>Weather Forecast Map</figcaption>
-  <ul>  
-    <li>HTML Fundamentals</li>
-    <li>CSS Styling</li>
-    <li>JavaScript Programming</li>
-    <li>Responsive Design</li>
-  </ul>
-</footer>
+        <ul>  
+            <li>HTML Fundamentals</li>
+            <li>CSS Styling</li>
+            <li>JavaScript Programming</li>
+            <li>Responsive Design</li>
+        </ul>
+    </footer>
 
 </html>
