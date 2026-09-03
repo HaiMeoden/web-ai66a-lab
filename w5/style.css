@@ -1,42 +1,75 @@
-body {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
     font-family: Arial, sans-serif;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: rgb(78, 78, 255);
-    color: white;
-}
-
-#score-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-}
-
-.score input {
-    width: 100px;
-    padding: 5px;
-    font-size: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-}
-
-#score-form button {
-    padding: 10px 20px;
     font-size: 16px;
-    background-color: rgb(68, 68, 255);
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: cyan;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#total {
+thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #eff6ff;
+    transition: background-color 0.2s ease;
+}
+
+td:first-child,
+th:first-child {
     text-align: center;
-    font-size: 24px;
-    margin-top: 40px;
+    width: 60px;
+}
+
+td:nth-child(2) {
+    font-weight: 500;
+}
+
+
+td a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
 }
